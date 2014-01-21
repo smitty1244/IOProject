@@ -32,9 +32,12 @@ public class IOPanel extends JPanel
 	 */
 	private JButton saveButton;
 	/**
-	 * this sets the titleField as a JTextField
+	 * this creats the loadButton as a JButton.
 	 */
 	private JButton loadButton;
+	/**
+	 * this sets the titleField as a JTextField
+	 */
 	private JTextField titleField;
 	/**
 	 * this sets the rankingField as a JTextField
@@ -56,6 +59,9 @@ public class IOPanel extends JPanel
 	 * this sets the title Label as a JLabel
 	 */
 	private JLabel titleLabel;
+	/**
+	 * this sets the gameCountLabel as a JLabel.
+	 */
 	private JLabel gameCountLabel;
 	/**
 	 * this sets the baseLayout as a SpringLayout
@@ -106,7 +112,10 @@ public class IOPanel extends JPanel
 		this.add(gameCountLabel);
 
 	}
-
+	
+	/**
+	 * this sets up action listeners for the two buttons that are used in this program and checks if the input is correct. It also keeps track of the gameCountLabel.
+	 */
 	private void setupListeners()
 	{
 		saveButton.addActionListener(new ActionListener()
